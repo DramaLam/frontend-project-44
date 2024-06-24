@@ -3,9 +3,17 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/DramaLam/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DramaLam/frontend-project-44/actions)",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "DramaLam",
-  "license": "ISC"
+  "license": "ISC",
+  "bin": {
+    "code": "bin/brain-games.js"
+  },
+  "dependencies": {
+    "make": "^0.0.0",
+    "publish": "^0.6.0"
+  }
 }
