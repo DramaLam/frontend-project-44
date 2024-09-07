@@ -10,10 +10,12 @@
   "author": "DramaLam",
   "license": "ISC",
   "bin": {
-    "code": "bin/brain-games.js"
+    "code": "bin/brain-games.js",
+    "brain-games": "bin/brain-games.js"
   },
   "dependencies": {
     "make": "^0.0.0",
     "publish": "^0.6.0"
-  }
+  },
+  "devDependencies": {}
 }
