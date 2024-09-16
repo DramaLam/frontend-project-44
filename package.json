@@ -17,5 +17,22 @@
     "make": "^0.0.0",
     "publish": "^0.6.0",
     "readline-sync": "^1.4.10"
-  }
+  },
+  "devDependencies": {
+    "@eslint/create-config": "^1.0.0",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.10.0",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.30.0",
+    "globals": "^15.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DramaLam/frontend-project-44.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DramaLam/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/DramaLam/frontend-project-44#readme"
 }
