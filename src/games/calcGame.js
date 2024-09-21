@@ -5,7 +5,7 @@ const calcGame = () => {
   const num1 = generationRandomNum(0, 100);
   const num2 = generationRandomNum(0, 100);
   const operatorsArr = ['+', '-', '*'];
-  const operatorNum = generationRandomNum(1, 3);
+  const operatorNum = generationRandomNum(0, 2);
   const operator = operatorsArr[operatorNum];
 
   switch (operator) {
