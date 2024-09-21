@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import welcome from '../src/cli.js';
+import welcome from './cli.js';
 
 const games = (game) => {
   const userName = welcome();
@@ -16,24 +16,24 @@ const games = (game) => {
     }
 
     console.log(`Question: ${question}`);
-  
+
     const answerUser = readlineSync.question('Your answer: ');
-  
+
     if (answerUser.toString() === correctAnswer.toString()) {
       console.log('Correct!');
     } else {
       console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
-  
+
       count = 4;
     }
-  
+
     count += 1;
   }
-  
+
   if (count === 3) {
     console.log(`Congratulations, ${userName}!`);
-  };
+  }
 };
 
 export default games;
