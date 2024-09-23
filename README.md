@@ -8,13 +8,17 @@
 # Первый проект на Hexlet - Игры разума!
 
 # Asciinema:
-
+Игра: "Проверка на чётность"
 <a href="https://asciinema.org/a/Luw6MDeDa4yJffp9xxLWWUVOn" target="_blank"><img src="https://asciinema.org/a/Luw6MDeDa4yJffp9xxLWWUVOn.svg" /></a>
 
+Игра: "Калькулятор"
 <a href="https://asciinema.org/a/V2FCSl6ku5SiWQwLBHV39ZK6H" target="_blank"><img src="https://asciinema.org/a/V2FCSl6ku5SiWQwLBHV39ZK6H.svg" /></a>
 
+Игра "НОД"
 <a href="https://asciinema.org/a/s52vrFrSqFWQvS2O7WpxMH8TV" target="_blank"><img src="https://asciinema.org/a/s52vrFrSqFWQvS2O7WpxMH8TV.svg" /></a>
 
+Игра "Арифметическая прогрессия"
 <a href="https://asciinema.org/a/xsdHGRh12uj7ZxWD3oB2RZQm6" target="_blank"><img src="https://asciinema.org/a/xsdHGRh12uj7ZxWD3oB2RZQm6.svg" /></a>
 
+Игра "Простое ли число?"
 <a href="https://asciinema.org/a/vOf7dYvqJhrE5AXQOzSo6SRO1" target="_blank"><img src="https://asciinema.org/a/vOf7dYvqJhrE5AXQOzSo6SRO1.svg" /></a>
