@@ -2,8 +2,6 @@ import generationRandomNum from '../modules/generationRandomNum.js';
 
 const generationArr = (firstNum, stepArr, lengthArr, arr) => {
   if (arr.length === lengthArr) {
-    // console.log(`ARR, ${typeof(arr)}!`);
-    console.log(arr);
     return arr;
   }
 
@@ -15,12 +13,14 @@ const generationArr = (firstNum, stepArr, lengthArr, arr) => {
 
   arr.push(nextNum);
   generationArr(firstNum, stepArr, lengthArr, arr);
+
+  return arr;
 };
 
-const resultArr = (arr) => {
+const resultArrStr = (arr) => {
   let str = '';
 
-  for (i = 0; i <= arr.length; i++) {
+  for (let i = 0; i <= arr.length; i += 1) {
     str = `${str} ${arr[i]}`;
   }
 
@@ -35,13 +35,13 @@ const progressionGame = () => {
   const arr = generationArr(firstNum, stepArr, lengthArr, []);
   console.log(`arr, ${arr}!`);
   const positionAnswer = generationRandomNum(0, lengthArr - 1);
-  const answer = 0;
-  const resultArr = '';
+  let answer = 0;
+  // const resultArr = '';
 
   answer = arr[positionAnswer];
   arr[positionAnswer] = '..';
 
-  resultArr = resultArr(arr);
+  const resultArr = resultArrStr(arr);
 
   result.push(resultArr);
   result.push(answer);
