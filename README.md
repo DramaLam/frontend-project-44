@@ -7,6 +7,15 @@
 
 # Первый проект на Hexlet - Игры разума!
 
+1. Склонируйте репозиторий на свой компьютер командой git clone
+2. Выполните команду make install
+3. Ввыберите игру:
+   Игра: "Проверка на чётность" - brain-even
+   Игра: "Калькулятор" - brain-calc
+   Игра "НОД" - brain-gcd
+   Игра "Арифметическая прогрессия" - brain-progression
+   Игра "Простое ли число?" - brain-prime
+
 ## Asciinema:
 Игра: "Проверка на чётность"
 <a href="https://asciinema.org/a/Luw6MDeDa4yJffp9xxLWWUVOn" target="_blank"><img src="https://asciinema.org/a/Luw6MDeDa4yJffp9xxLWWUVOn.svg" /></a>
