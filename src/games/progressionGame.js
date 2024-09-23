@@ -33,10 +33,8 @@ const progressionGame = () => {
   const lengthArr = generationRandomNum(5, 10);
   const stepArr = generationRandomNum(-100, 100);
   const arr = generationArr(firstNum, stepArr, lengthArr, []);
-  console.log(`arr, ${arr}!`);
   const positionAnswer = generationRandomNum(0, lengthArr - 1);
   let answer = 0;
-  // const resultArr = '';
 
   answer = arr[positionAnswer];
   arr[positionAnswer] = '..';
