@@ -7,7 +7,7 @@
 
 # Первый проект на Hexlet - Игры разума!
 
-# Asciinema:
+## Asciinema:
 Игра: "Проверка на чётность"
 <a href="https://asciinema.org/a/Luw6MDeDa4yJffp9xxLWWUVOn" target="_blank"><img src="https://asciinema.org/a/Luw6MDeDa4yJffp9xxLWWUVOn.svg" /></a>
 
