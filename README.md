@@ -5,6 +5,10 @@
   <img src="https://api.codeclimate.com/v1/badges/3fefd119505dbe653c6d/maintainability" />
 </a>
 
+# Первый проект на Hexlet - Игры разума!
+
+# Asciinema:
+
 <a href="https://asciinema.org/a/Luw6MDeDa4yJffp9xxLWWUVOn" target="_blank"><img src="https://asciinema.org/a/Luw6MDeDa4yJffp9xxLWWUVOn.svg" /></a>
 
 <a href="https://asciinema.org/a/V2FCSl6ku5SiWQwLBHV39ZK6H" target="_blank"><img src="https://asciinema.org/a/V2FCSl6ku5SiWQwLBHV39ZK6H.svg" /></a>
