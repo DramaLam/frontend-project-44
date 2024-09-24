@@ -1,30 +1,22 @@
 import generationRandomNum from '../modules/generationRandomNum.js';
 
 const generationArr = (firstNum, stepArr, lengthArr, arr) => {
-  if (arr.length === lengthArr) {
-    return arr;
+  const newArr = arr;
+
+  if (newArr.length === lengthArr) {
+    return newArr;
   }
 
-  if (arr.length === 0) {
-    arr.push(firstNum);
+  if (newArr.length === 0) {
+    newArr.push(firstNum);
   }
 
-  const nextNum = arr[arr.length - 1] + stepArr;
+  const nextNum = newArr[newArr.length - 1] + stepArr;
 
-  arr.push(nextNum);
-  generationArr(firstNum, stepArr, lengthArr, arr);
+  newArr.push(nextNum);
+  generationArr(firstNum, stepArr, lengthArr, newArr);
 
-  return arr;
-};
-
-const resultArrStr = (arr) => {
-  let str = '';
-
-  for (let i = 0; i <= arr.length; i += 1) {
-    str = `${str} ${arr[i]}`;
-  }
-
-  return arr;
+  return newArr;
 };
 
 const progressionGame = () => {
@@ -34,15 +26,12 @@ const progressionGame = () => {
   const stepArr = generationRandomNum(-100, 100);
   const arr = generationArr(firstNum, stepArr, lengthArr, []);
   const positionAnswer = generationRandomNum(0, lengthArr - 1);
-  let answer = 0;
-
-  answer = arr[positionAnswer];
+  const answer = arr[positionAnswer];
+  
   arr[positionAnswer] = '..';
 
-  const resultArr = resultArrStr(arr);
-
-  result.push(resultArr);
-  result.push(answer);
+  result.push(arr.join(' '));
+  result.push(answer.toString());
 
   return result;
 };

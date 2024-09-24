@@ -14,7 +14,7 @@ const gcdGame = () => {
   const gcd = findGCD(num1, num2);
 
   result.push(`${num1} ${num2}`);
-  result.push(gcd);
+  result.push(gcd.toString());
 
   return result;
 };

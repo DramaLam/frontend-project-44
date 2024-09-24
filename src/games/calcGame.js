@@ -7,22 +7,26 @@ const calcGame = () => {
   const operatorsArr = ['+', '-', '*'];
   const operatorNum = generationRandomNum(0, 2);
   const operator = operatorsArr[operatorNum];
+  const question = `${num1} ${operator} ${num2}`;
+  let answer = '';
+
+  result.push(question);
 
   switch (operator) {
     case '+':
-      result.push(`${num1} + ${num2}`);
-      result.push(num1 + num2);
+      answer = (num1 + num2).toString();
+      result.push(answer);
       return result;
     case '-':
-      result.push(`${num1} - ${num2}`);
-      result.push(num1 - num2);
+      answer = (num1 - num2).toString();
+      result.push(answer);
       return result;
     case '*':
-      result.push(`${num1} * ${num2}`);
-      result.push(num1 * num2);
+      answer = (num1 * num2).toString();
+      result.push(answer);
       return result;
     default:
-      throw Error('Блять');
+      throw Error('Ой, что-то пошло не так. Повторите опрецию!');
   }
 };
 
