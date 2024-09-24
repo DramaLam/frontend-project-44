@@ -24,5 +24,4 @@ const runGcd = () => {
   runGame(generateData);
 };
 
-
 export default runGcd;
