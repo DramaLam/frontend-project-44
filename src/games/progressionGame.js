@@ -27,7 +27,7 @@ const progressionGame = () => {
   const arr = generationArr(firstNum, stepArr, lengthArr, []);
   const positionAnswer = generationRandomNum(0, lengthArr - 1);
   const answer = arr[positionAnswer];
-  
+
   arr[positionAnswer] = '..';
 
   result.push(arr.join(' '));

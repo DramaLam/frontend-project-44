@@ -1,14 +1,13 @@
 import generationRandomNum from '../modules/generationRandomNum.js';
-
-const isEven = (num) => {return num % 2 === 0;};
+import isEven from '../modules/isEven.js';
 
 const evenGame = () => {
   const result = ['Answer "yes" if the number is even, otherwise answer "no".'];
   const num = generationRandomNum(0, 100);
+  const answer = isEven(num) ? 'yes' : 'no';
 
   result.push(num);
-
-  isEven(num) ? result.push('yes') : result.push('no');
+  result.push(answer);
 
   return result;
 };
