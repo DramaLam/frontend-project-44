@@ -32,7 +32,7 @@ npm - 10.8.3
 <a href="https://asciinema.org/a/s52vrFrSqFWQvS2O7WpxMH8TV" target="_blank"><img src="https://asciinema.org/a/s52vrFrSqFWQvS2O7WpxMH8TV.svg" /></a>
 
 Игра "Арифметическая прогрессия"
-<a href="https://asciinema.org/a/xsdHGRh12uj7ZxWD3oB2RZQm6" target="_blank"><img src="https://asciinema.org/a/xsdHGRh12uj7ZxWD3oB2RZQm6.svg" /></a>
+<a href="https://asciinema.org/a/9zED027MqsqfpYKdlI0VAme3u" target="_blank"><img src="https://asciinema.org/a/9zED027MqsqfpYKdlI0VAme3u.svg" /></a>
 
 Игра "Простое ли число?"
 <a href="https://asciinema.org/a/vOf7dYvqJhrE5AXQOzSo6SRO1" target="_blank"><img src="https://asciinema.org/a/vOf7dYvqJhrE5AXQOzSo6SRO1.svg" /></a>
