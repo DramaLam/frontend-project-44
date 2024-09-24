@@ -1,4 +1,5 @@
 import generationRandomNum from '../modules/generationRandomNum.js';
+import runGame from '../index.js';
 
 const generationArr = (firstNum, stepArr, lengthArr, arr) => {
   const newArr = arr;
@@ -19,7 +20,7 @@ const generationArr = (firstNum, stepArr, lengthArr, arr) => {
   return newArr;
 };
 
-const progressionGame = () => {
+const generateData = () => {
   const result = ['What number is missing in the progression?'];
   const firstNum = generationRandomNum(-100, 100);
   const lengthArr = generationRandomNum(5, 10);
@@ -36,4 +37,8 @@ const progressionGame = () => {
   return result;
 };
 
-export default progressionGame;
+const runProgression = () => {
+  runGame(generateData);
+};
+
+export default runProgression;

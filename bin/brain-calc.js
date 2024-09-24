@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import games from '../src/index.js';
-import calcGame from '../src/games/calcGame.js';
+import runCalc from '../src/games/runCalc.js';
 
-games(calcGame);
+runCalc();

@@ -1,4 +1,5 @@
 import generationRandomNum from '../modules/generationRandomNum.js';
+import runGame from '../index.js';
 
 const findGCD = (a, b) => {
   if (b === 0) {
@@ -7,7 +8,7 @@ const findGCD = (a, b) => {
   return findGCD(b, a % b);
 };
 
-const gcdGame = () => {
+const generateData = () => {
   const result = ['Find the greatest common divisor of given numbers.'];
   const num1 = generationRandomNum(0, 100);
   const num2 = generationRandomNum(0, 100);
@@ -19,4 +20,9 @@ const gcdGame = () => {
   return result;
 };
 
-export default gcdGame;
+const runGcd = () => {
+  runGame(generateData);
+};
+
+
+export default runGcd;

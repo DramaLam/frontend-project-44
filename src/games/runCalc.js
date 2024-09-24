@@ -1,6 +1,7 @@
 import generationRandomNum from '../modules/generationRandomNum.js';
+import runGame from '../index.js';
 
-const calcGame = () => {
+const generateData = () => {
   const result = ['What is the result of the expression?'];
   const num1 = generationRandomNum(0, 100);
   const num2 = generationRandomNum(0, 100);
@@ -30,4 +31,8 @@ const calcGame = () => {
   }
 };
 
-export default calcGame;
+const runCalc = () => {
+  runGame(generateData);
+};
+
+export default runCalc;
