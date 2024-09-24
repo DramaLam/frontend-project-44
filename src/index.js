@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import welcome from './cli.js';
 
-const games = (game) => {
+const runGame = (game) => {
   const userName = welcome();
 
   for (let i = 0; i <= 2; i += 1) {
@@ -31,4 +31,4 @@ const games = (game) => {
   }
 };
 
-export default games;
+export default runGame;
