@@ -3,14 +3,13 @@ import isEven from '../modules/isEven.js';
 import runGame from '../index.js';
 
 const generateData = () => {
-  const result = ['Answer "yes" if the number is even, otherwise answer "no".'];
-  const num = generationRandomNum(0, 100);
+  const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
+  const minNumber = 0;
+  const maxNumber = 100;
+  const num = generationRandomNum(minNumber, maxNumber);
   const answer = isEven(num) ? 'yes' : 'no';
 
-  result.push(num);
-  result.push(answer);
-
-  return result;
+  return [rule, num, answer];
 };
 
 const runEven = () => {

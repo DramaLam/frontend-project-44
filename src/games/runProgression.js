@@ -22,11 +22,16 @@ const generationArr = (firstNum, stepArr, lengthArr, arr) => {
 
 const generateData = () => {
   const result = ['What number is missing in the progression?'];
-  const firstNum = generationRandomNum(-100, 100);
-  const lengthArr = generationRandomNum(5, 10);
-  const stepArr = generationRandomNum(-100, 100);
+  const minNumber = -100;
+  const maxNumber = 100;
+  const firstNum = generationRandomNum(minNumber, maxNumber);
+  const minLength = 5;
+  const maxLength = 10;
+  const lengthArr = generationRandomNum(minLength, maxLength);
+  const stepArr = generationRandomNum(minNumber, maxNumber);
   const arr = generationArr(firstNum, stepArr, lengthArr, []);
-  const positionAnswer = generationRandomNum(0, lengthArr - 1);
+  const minPosition = 0;
+  const positionAnswer = generationRandomNum(minPosition, lengthArr - 1);
   const answer = arr[positionAnswer];
 
   arr[positionAnswer] = '..';
