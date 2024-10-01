@@ -10,16 +10,13 @@ const getName = () => {
   return userName;
 };
 
-const runGame = (game) => {
+const runGame = (rule, getGameInfo) => {
   const userName = getName();
   const numberOfGame = 2;
+  console.log(rule);
 
   for (let i = 0; i <= numberOfGame; i += 1) {
-    const [rule, question, correctAnswer] = game();
-
-    if (i === 0) {
-      console.log(rule);
-    }
+    const [question, correctAnswer] = getGameInfo();
 
     console.log(`Question: ${question}`);
 

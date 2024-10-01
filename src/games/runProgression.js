@@ -21,7 +21,6 @@ const generationArr = (firstNum, stepArr, lengthArr, arr) => {
 };
 
 const generateData = () => {
-  const result = ['What number is missing in the progression?'];
   const minNumber = -100;
   const maxNumber = 100;
   const firstNum = generationRandomNum(minNumber, maxNumber);
@@ -36,14 +35,14 @@ const generateData = () => {
 
   arr[positionAnswer] = '..';
 
-  result.push(arr.join(' '));
-  result.push(answer.toString());
+  const question = (arr.join(' '));
 
-  return result;
+  return [question, answer];
 };
 
 const runProgression = () => {
-  runGame(generateData);
+  const rule = 'What number is missing in the progression?';
+  runGame(rule, generateData);
 };
 
 export default runProgression;

@@ -9,21 +9,20 @@ const findGCD = (a, b) => {
 };
 
 const generateData = () => {
-  const result = ['Find the greatest common divisor of given numbers.'];
   const minNumber = 0;
   const maxNumber = 100;
   const num1 = generationRandomNum(minNumber, maxNumber);
   const num2 = generationRandomNum(minNumber, maxNumber);
   const gcd = findGCD(num1, num2);
+  const question = `${num1} ${num2}`;
+  const answer = gcd.toString();
 
-  result.push(`${num1} ${num2}`);
-  result.push(gcd.toString());
-
-  return result;
+  return [question, answer];
 };
 
 const runGcd = () => {
-  runGame(generateData);
+  const rule = 'Find the greatest common divisor of given numbers.';
+  runGame(rule, generateData);
 };
 
 export default runGcd;
