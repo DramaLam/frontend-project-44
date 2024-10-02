@@ -36,7 +36,7 @@ const generateData = () => {
 
   const question = (arr.join(' '));
 
-  return [question, answer];
+  return [question, answer.toString()];
 };
 
 const runProgression = () => {
