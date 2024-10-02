@@ -2,7 +2,7 @@ import generationRandomNum from '../modules/generationRandomNum.js';
 import runGame from '../index.js';
 
 const generationArr = (firstNum, stepArr, lengthArr, arr) => {
-  const newArr = arr;
+  const newArr = arr.slice();
 
   if (newArr.length === lengthArr) {
     return newArr;
@@ -15,9 +15,8 @@ const generationArr = (firstNum, stepArr, lengthArr, arr) => {
   const nextNum = newArr[newArr.length - 1] + stepArr;
 
   newArr.push(nextNum);
-  generationArr(firstNum, stepArr, lengthArr, newArr);
 
-  return newArr;
+  return generationArr(firstNum, stepArr, lengthArr, newArr);
 };
 
 const generateData = () => {

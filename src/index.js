@@ -28,7 +28,7 @@ const runGame = (rule, getGameInfo) => {
       console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
 
-      break;
+      return;
     }
 
     if (i === 2) {

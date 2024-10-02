@@ -2,18 +2,13 @@ import generationRandomNum from '../modules/generationRandomNum.js';
 import runGame from '../index.js';
 
 const performOperation = (num1, num2, operator) => {
-  let answer = '';
-
   switch (operator) {
     case '+':
-      answer = (num1 + num2);
-      return answer;
+      return (num1 + num2);
     case '-':
-      answer = (num1 - num2);
-      return answer;
+      return (num1 - num2);
     case '*':
-      answer = (num1 * num2);
-      return answer;
+      return (num1 * num2);
     default:
       console.log(num1, num2, operator);
       throw Error('Ой, что-то пошло не так. Повторите опрецию!');
