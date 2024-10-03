@@ -30,11 +30,9 @@ const runGame = (rule, getGameInfo) => {
 
       return;
     }
-
-    if (i === 2) {
-      console.log(`Congratulations, ${userName}!`);
-    }
   }
+
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default runGame;
